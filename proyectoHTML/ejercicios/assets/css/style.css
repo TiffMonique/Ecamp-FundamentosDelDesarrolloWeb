@@ -37,5 +37,6 @@ div h1{
 img{
     padding: 2rem;
     border: 15px solid grey;
-    margin: 3rem 6rem 3rem 6rem;
+    margin: 3rem auto 3rem auto;
+    display: block;
 }
