@@ -33,3 +33,7 @@ div{
 div h1{
     background-color: white;
 }
+
+img{
+    padding: 2rem;
+}
