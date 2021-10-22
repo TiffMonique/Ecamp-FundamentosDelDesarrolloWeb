@@ -7,6 +7,19 @@ p{
 .titulo{
      color: red;
 }
-#parrafo{
+
+.parrafo{
     color:aqua;
+}
+
+body{
+    background-color:beige;
+}
+
+p{
+    text-align: justify;
+}
+
+#p1{
+    color: greenyellow;
 }
