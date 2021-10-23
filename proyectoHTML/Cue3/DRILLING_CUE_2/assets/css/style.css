@@ -1,9 +1,9 @@
 .imagen_fondo{
-   
-        background-image: url('fondo.jpg');
+
+        background-image: url(proyectoHTML/Cue3/DRILLING_CUE_2/img/fondo.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed; 
         background-size: 100% 100%;
-    
+      
      
 }
