@@ -2,7 +2,7 @@
         margin: 0;
         padding: 0;
         box-sizing:border-box;
-        font-family:'Zen Maru Gothic', sans-serif;
+        font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 body{
@@ -23,7 +23,7 @@ body{
     height: 100%;
     background-color: #111;
     display:flex;
-    flex-direction:colum;
+    flex-direction:column;
     align-self:flex-start;
     padding:20px 0;
     border-right: 1px solid #222;
@@ -47,14 +47,15 @@ body{
         justify-content:flex-start;
         align-items:center;
         gap:30px;
-        padding: 15px;
+        padding: 15px 20px;
         margin: 1px 0;
         cursor:pointer;
         transition: all 0.3s;
+        color: white;
 
 }
 
-.container .left .flow:nth-shild(5){
+.container .left .flow:nth-child(5){
         margin-bottom: 30px;
 
 }
@@ -67,17 +68,17 @@ body{
         font-weight: lighter;
 }
 
-.container .left .home .span{
+.container .left .home span{
         color: red;
 
 }
 
 .container .left .home{
-        background-color: rgba(236,35,35,0,212);
+        background-color: rgba(236,35,35,0.212);
 }
 
 .container .flow span{
-        font-size: 25px;
+        font-size: 30px;
         color:rgb(226,226,226);
 }
 
@@ -91,7 +92,7 @@ body{
 
 }
 
-.container .rigth{
+.container .right{
         width: 85%;
         position: absolute;
         right: 0;
@@ -113,7 +114,7 @@ body{
 }
 
 .right .heading .head-content h2{
-        font-size: 24;
+        font-size: 24px;
         text-transform: capitalize;
 
 }
@@ -160,14 +161,15 @@ body{
         letter-spacing: 1px;
         font-weight: 500 ;
         background-color: red;
+        border: none;
         text-transform: capitalize;
 
 }
 
-.right .head-content .img-container{
+.right .heading .img-container{
         width: 50%;
         height: 350%;
-        background: url(proyectoHTML/Cue3/DRILLING_CUE_2/img/interstelar.jpg) no-repeat center center /cover;
+        background: url(../img/interstelar.jpg) no-repeat center center / cover;
 
        
 }
@@ -215,16 +217,71 @@ h1 span{
 
 }
 
+.list::before{
+        content:'';
+        width: 100%;
+        position: absolute;
+        left:0;
+        bottom:0;
+        background-color: rgn(0,0,0,0.5);
+        color:white;
+        font-size:18px;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 10px 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(50px);
+        transition: all 0.4s;
+}
+
+
+.list:hover::before{
+   transform:translateY(0);
+   opacity:1;
+   visibility: visible;     
+}
+
+
+.list:nth-child(1)::before{
+        content:'La Cabaña';
+}
+
+.list:nth-child(2)::before{
+        content:'Indi Game';
+}
+.list:nth-child(3)::before{
+        content:'La razon de estar contigo';
+}
+.list:nth-child(4)::before{
+        content:'Contacto';
+}
+
+.list:nth-child(5)::before{
+        content:'A walk to remember';
+}
+
+
+
 .list:nth-child(1){
-        background: url(proyectoHTML/Cue3/DRILLING_CUE_2/img/cabana.jpg) no-repeat center center /cover;
+        background: url(../img/cabana.jpg) no-repeat center center /cover;
 
 }
+
 
 
 .list:nth-child(2){
-        background: url(proyectoHTML/Cue3/DRILLING_CUE_2/img/indiegame.jpg) no-repeat center center /cover;
+        background: url(../img/indiegame.jpg) no-repeat center center /cover;
 }
 
 .list:nth-child(3){
-        background: url(proyectoHTML/Cue3/DRILLING_CUE_2/img/larazondeestarcontigo.jpg) no-repeat center center /cover;
+        background: url(../img/larazondeestarcontigo.jpg) no-repeat center center /cover;
+}
+
+.list:nth-child(4){
+        background: url(../img/Contact-968251517-large.jpg) no-repeat center center /cover;
+}
+
+.list:nth-child(5){
+        background: url(../img/awalktoremember.jpg) no-repeat center center /cover;
 }
