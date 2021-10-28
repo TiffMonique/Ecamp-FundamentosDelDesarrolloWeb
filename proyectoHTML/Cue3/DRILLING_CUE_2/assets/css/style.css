@@ -254,7 +254,7 @@ h1 span{
 }
 
 .list:nth-child(2)::before{
-        content:'Indi Game';
+        content:'Indie Game';
 }
 .list:nth-child(3)::before{
         content:'La razon de estar contigo';
