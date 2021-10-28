@@ -1,0 +1,89 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        font-family: 'Zen Maru Gothic', sans-serif; 
+        
+}
+
+body{
+        background-image: linear-gradient(rgba(5,7,12, 0.60), rgba(5,7,12,0.50)), url(../img/La-cabana.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        width:100vw;
+        height:100vh;
+        overflow-x:hidden;
+
+}
+
+.right .heading{
+        display: flex;
+        color:rgb(226,226,226);
+
+} 
+
+.right .heading .head-content{
+        width: 90%;
+        padding-left: 680px;
+        margin-top: 100px;
+       
+
+}
+
+.right .heading .head-content h2{
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+
+}
+
+.head-content p{
+        font-size: 16px;
+        initial-letter: 2px;
+        text-align: justify;
+        
+
+}
+
+
+  .img-container{
+        width: 200px;
+        height: 280px;
+        background: url(../img/cabana.jpg) no-repeat center center / cover;
+       /* padding-left: 450px;*/
+        margin-left: 420px;
+        bottom: 400px;
+       position: fixed;
+        border-radius: 8px;
+
+
+}
+.img-container img{
+        width: 100%;
+        height: 100%;
+        
+       
+}
+
+.titulo{
+        margin-top:40px;
+        padding-left: 20px;
+   }
+
+h1{
+        color:rgb(226,226,226);
+        font-size:30px;
+        letter-spacing: 1px;
+        font-weight: 500;
+}
+
+.titulo .movie-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+        margin-top: 20px;
+
+}
