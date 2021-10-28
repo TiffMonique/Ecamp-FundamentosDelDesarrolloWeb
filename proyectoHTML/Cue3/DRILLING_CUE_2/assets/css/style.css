@@ -2,8 +2,8 @@
         margin: 0;
         padding: 0;
         box-sizing:border-box;
-        font-family: 'Zen Maru Gothic', sans-serif;
-        font-family: 'Zen Maru Gothic', sans-serif; font-family: 'Zen Old Mincho', serif;
+        font-family: 'Zen Maru Gothic', sans-serif; 
+        
 }
 
 body{
@@ -35,11 +35,12 @@ body{
 
 
 .container .left p{
-        font-size:18px;
+        font-size:20px;
         color: grey;
         text-transform:capitalize;
         margin-bottom:15px;
         padding: 0 20px;
+        font-family: 'Dosis', sans-serif;
 }
 
 .container .left .flow{
@@ -53,7 +54,7 @@ body{
         cursor:pointer;
         transition: all 0.3s;
         color: white;
-
+        
 }
 
 .container .left .flow:nth-child(5){
@@ -90,7 +91,7 @@ body{
         font-weight:500;
         letter-spacing:1px;
         text-align: left;
-        font-family: 'Rampart One', cursive;
+        font-family: 'Acme', sans-serif;
         
 
 }
@@ -140,6 +141,7 @@ body{
         justify-content: center;
         gap: 5px;
         margin-left:5px;
+        
         border-radius: 50px;
 
 }
@@ -172,7 +174,7 @@ body{
 }
 
 .right .heading .img-container{
-        width: 1220px;
+        width: 1000px;
         height: 500px;
         background: url(../img/interstellar-poster.jpg) no-repeat center center / cover;
         margin-top: 5px;
@@ -275,9 +277,8 @@ h1 span{
 
 }
 
-
-
 .list:nth-child(2){
+
         background: url(../img/indiegame.jpg) no-repeat center center /cover;
         
 }

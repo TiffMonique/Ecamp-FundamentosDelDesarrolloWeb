@@ -7,7 +7,7 @@
 }
 
 body{
-        background-image: linear-gradient(rgba(5,7,12,0.70), rgba(5,7,12,0.70)), url(../img/La-cabana.jpg);
+        background-image: linear-gradient(rgba(5,7,12,0.70), rgba(5,7,12,0.70)), url(https://assets.nintendo.com/image/upload/f_auto,q_auto,w_960,h_540/ncom/en_US/games/switch/f/fez-switch/Video/posters/FEZ_Launch_trailer);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
@@ -42,11 +42,12 @@ body{
 
 
 .container .left p{
-        font-size:18px;
+        font-size:20px;
         color: grey;
         text-transform:capitalize;
         margin-bottom:15px;
         padding: 0 20px;
+        font-family: 'Dosis', sans-serif;
 }
 
 .container .left .flow{
@@ -60,6 +61,7 @@ body{
         cursor:pointer;
         transition: all 0.3s;
         color: white;
+        font-family: 'Zen Maru Gothic', sans-serif; 
 
 }
 
@@ -97,7 +99,7 @@ body{
         font-weight:500;
         letter-spacing:1px;
         text-align: left;
-        font-family: 'Rampart One', cursive;
+        font-family: 'Acme', sans-serif;
         
 
 }
@@ -136,7 +138,7 @@ body{
   .img-container{
         width: 200px;
         height: 280px;
-        background: url(../img/cabana.jpg) no-repeat center center / cover;
+        background: url(../img/indiegame.jpg) no-repeat center center / cover;
         margin-left: 370px;
         top: 110px;
         position: absolute;
