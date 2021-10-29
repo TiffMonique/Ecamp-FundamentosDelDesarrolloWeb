@@ -2,8 +2,7 @@
         margin: 0;
         padding: 0;
         box-sizing:border-box;
-        font-family: 'Zen Maru Gothic', sans-serif; 
-        
+        font-family: 'Gothic A1', sans-serif;  
 }
 
 body{
@@ -35,7 +34,8 @@ body{
 
 
 .container .left p{
-        font-size:20px;
+        font-size:23px;
+        font-weight: bold;
         color: grey;
         text-transform:capitalize;
         margin-bottom:15px;
@@ -107,6 +107,7 @@ body{
 .right .heading{
         display: flex;
         color:rgb(226,226,226);
+       
 
 } 
 
@@ -120,6 +121,7 @@ body{
 .right .heading .head-content h2{
         font-size: 30px;
         text-transform: capitalize;
+        letter-spacing: 1px;
 
 }
 
@@ -136,12 +138,11 @@ body{
         width: 80px;
         height: 30px;
         border:1px solid white;
-        font-size: 14px;
+        font-size: 16px;
         display: flex;
         justify-content: center;
         gap: 5px;
         margin-left:5px;
-        
         border-radius: 50px;
 
 }
@@ -152,10 +153,10 @@ body{
 
 
 .head-content p{
-        font-size: 16px;
+        font-size: 17px;
         initial-letter: 2px;
         margin-bottom: 30px;
-        text-align: justify;
+        
 
 }
 
@@ -164,7 +165,7 @@ body{
         color:rgb(226,226,226);
         text-decoration: none;
         width: 120px;
-        font-family: 16px;
+        font-family: 18px;
         letter-spacing: 1px;
         font-weight: 500 ;
         background-color: red;
@@ -197,7 +198,7 @@ h1{
         color:rgb(226,226,226);
         font-size:30px;
         letter-spacing: 1px;
-        font-weight: 500;
+        font-weight: 800;
 }
 
 h1 span{
@@ -214,6 +215,7 @@ h1 span{
         align-items: center;
         gap:5px;
         margin-top: 20px;
+       
 
 }
 
