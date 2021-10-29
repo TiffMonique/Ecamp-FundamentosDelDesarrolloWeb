@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Maru Gothic', sans-serif; 
+  }
+
+  body {
+    background-image: linear-gradient(rgba(5,7,12,0.70), rgba(5,7,12,0.70)), url(../img/fondoFormulario.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width:100vw;
+    height:100vh;
+    overflow-x:hidden;
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: white;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: block;
+    color: black;
+  }
+
+  select {
+    height: 40px;
+    margin-bottom: 6px;
+  }
+
+  button {
+    background-color: #b61515;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+
+  button:hover {
+    background-color: #787979;
+  }
+
+  input:focus,
+  select:focus {
+    background-color: lightblue;
+    border: 3px solid #555;
+  }
+
+  .formulario {
+    
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    padding: 18px;
+    width: 500px;
+    margin:auto;
+    
+  }
+
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    
+  
+}
+
+.container .left{
+    width: 15%;
+    height: 100%;
+    background-color:rgba(5, 7, 12, 0.58);
+    display:flex;
+    flex-direction:column;
+    align-self:flex-start;
+    padding:20px 0;
+    border-right: 1px solid #222;
+    position:fixed;
+ 
+}
+
+
+
+
+.container .left p{
+    font-size:23px;
+    font-weight: bold;
+    color: grey;
+    text-transform:capitalize;
+    margin-bottom:15px;
+    padding: 0 20px;
+    font-family: 'Dosis', sans-serif;
+   
+}
+
+.container .left .flow{
+    width: 100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:30px;
+    padding: 15px 20px;
+    margin: 1px 0;
+    cursor:pointer;
+    transition: all 0.3s;
+    color: white;
+    font-family: 'Zen Maru Gothic', sans-serif; 
+    font-weight: 1000;
+
+}
+
+.container .left .flow:nth-child(5){
+    margin-bottom: 30px;
+
+}
+
+.container .left .flow:hover:not(.registro){
+    background-color: #222;
+}
+.container .left .registro h2{
+    color:red;
+    font-weight: lighter;
+}
+
+.container .left .registro span{
+    color: red;
+
+}
+
+.container .left .registro{
+    background-color: rgba(236,35,35,0.212);
+}
+
+.container .flow span{
+    font-size: 30px;
+    color:rgb(226,226,226);
+}
+
+.container .flow h2{
+    text-transform:capitalize;
+    color: rgb(226,226,226);
+    font-size:20px;
+    font-weight:500;
+    letter-spacing:1px;
+    text-align: left;
+    font-family: 'Acme', sans-serif;
+    
+
+}
+
+  ::placeholder {
+    color: gray;
+  }
+
+  
+
+
+
+h1{
+     
+      margin-bottom: 10px;
+      color:rgb(20, 20, 20);
+      font-size:30px;
+      font-weight: 500;
+      padding-top: 10px;
+      padding-left: 55px;
+      font-weight: bold;
+     
+    
+    
+   
+  }
