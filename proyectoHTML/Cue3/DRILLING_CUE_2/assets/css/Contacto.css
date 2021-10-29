@@ -42,7 +42,7 @@ body{
 
 
 .container .left p{
-        font-size:25px;
+        font-size:23px;
         font-weight: bold;
         color: grey;
         text-transform:capitalize;
@@ -163,7 +163,6 @@ body{
 h1{
         color:rgb(226,226,226);
         font-size:30px;
-        letter-spacing: 1px;
         font-weight: 500;
 }
 

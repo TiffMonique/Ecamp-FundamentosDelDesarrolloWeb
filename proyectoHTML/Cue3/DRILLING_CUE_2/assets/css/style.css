@@ -3,12 +3,15 @@
         padding: 0;
         box-sizing:border-box;
         font-family: 'Gothic A1', sans-serif;  
+      
 }
 
 body{
         width:100vw;
         height:100vh;
         overflow-x:hidden;
+        margin-bottom: 158px;
+        background-color: #111;
 }
 
 .container{
@@ -16,6 +19,7 @@ body{
         min-height: 100vh;
         display:flex;
         justify-content: flex-start;
+        
 }
 
 .container .left{
@@ -112,9 +116,10 @@ body{
 } 
 
 .right .heading .head-content{
-        width: 50%;
+        width: 55%;
         padding: 20px;
         background-color: black;
+        
 
 }
 
@@ -242,6 +247,7 @@ h1 span{
         visibility: hidden;
         transform: translateY(50px);
         transition: all 0.4s;
+    
 }
 
 
@@ -261,7 +267,7 @@ h1 span{
         content:'Indie Game';
 }
 .list:nth-child(3)::before{
-        content:'La razon de estar contigo';
+        content:'La razón de estar contigo';
 }
 .list:nth-child(4)::before{
         content:'Contacto';
