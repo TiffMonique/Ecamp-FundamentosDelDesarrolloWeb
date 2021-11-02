@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRILLING_EXCERSICE_CUE_3</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-hiking" width="30" height="24" class="d-inline-block align-text-top"></i>
+                    Mountshot
+                  </a>
+             
+              <a class="navbar-brand" href="#"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Informacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Empleos</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+         
+    </header>
+    <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            Formulario de Registro
+          </div>
+    </div>
+    <!--Formulario-->
+    <div class="container">
+       
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-5">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01"  required>
+              <div class="valid-feedback">
+                ¡Se ve bien!
+              </div>
+            </div>
+            <div class="col-md-5">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" required>
+              <div class="valid-feedback">
+                ¡Se ve bien!
+              </div>
+            </div>
+            <div class="col-md-5">
+                <label for="exampleInputDate" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="exampleInputDate">
+                <div class="valid-feedback">
+                    ¡Se ve bien!
+                  </div>
+              </div>
+            <div class="col-md-5">
+              <label for="validationCustomUsername" class="form-label">Usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Por favor, elija un nombre de usuario.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text" style="color: rgba(255, 255, 255, 0.904);">Nunca compartiremos su correo electrónico con nadie más.</div>
+              </div>
+              <div class="col-md-5">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <div id="emailHelp" class="form-text" style="color: aliceblue;">Debe tener entre 8 y 20 caracteres.</div>
+              </div>
+              
+
+            <div class="col-md-4">
+              <label for="validationCustom04" class="form-label">Pais</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Seleccione</option>
+                <option>Chile</option>
+                <option>Honduras</option>
+                <option>Ecuador</option>
+                <option>Bolivia</option>
+                <option>Estados Unidos</option>
+                <option>Nicaragua</option>
+                <option>Argentina</option>
+                <option>Costa Rica</option>
+                <option>Paraguay</option>
+                <option>Venezuela</option>
+                <option>Guatemala</option>
+                
+
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                 Aceptar termninos y condiciones
+                </label>
+                <div class="invalid-feedback">
+                 Debes aceptar los terminos
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+      
+    </div>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Mountshot</h3>
+
+        <p class="footer-links">
+          <a href="#">Inicio</a>
+          |
+          <a href="#">A cerca de nosotros</a>
+          |
+          <a href="#">Contactanos</a>
+          |
+          <a href="#">Blog</a>
+        </p>
+
+        <p class="footer-company-name">
+          Copyright © 2021 <strong>Mountshot </strong>All rights reserved
+        </p>
+
+      </div>
+
+      <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Chile</span>
+                Santiago</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+56 7498996258</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#">mountshot@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Acerca de Mountshot</span>
+            <strong>Mountshot</strong> Esta red social tiene como objetivo contribuir a la difusión y promover la realización 
+            de senderismo alrededor del mundo, permitiendo a sus usuarios compartir fotografías y videos junto con 
+            reseñas de los lugares que han visitado. Además de poder hacer preguntas a los generadores del contenido 
+            sobre las condiciones del terreno, accesibilidad y otros temas de interés de quien practica esta actividad. 
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        
+        </div>
+    </div>
+    </footer>
+
+    <!--JS Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
