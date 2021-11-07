@@ -38,6 +38,7 @@ colores_pri_sec.push({
     secundarios:["Naranjo","Verde","Morado"],
 });
 
+//8. Imprime en una página web los colores categorizados en primarios y secundarios. La lectura de los datos debe realizarse desde el objeto generado en el paso anterior.
 colores_pri_sec.forEach(colors=>{
     document.write("COLORES PRIMARIOS: ");
     colors.primarios.forEach(d=>{document.write("<li>"+d+"</li>");
