@@ -1,0 +1,19 @@
+
+html , body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(5,7,12,0.10), rgba(5,7,12,0.10)), url(https://www.wallpapertip.com/wmimgs/2-28959_blue-and-purple-polygon-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x:hidden;
+    color: #eaf0f2;
+    
+}
+
+
+.container-table{
+    padding-left: 80px ;
+    padding-right: 80px ;
+    color: #eaf0f2;
+}

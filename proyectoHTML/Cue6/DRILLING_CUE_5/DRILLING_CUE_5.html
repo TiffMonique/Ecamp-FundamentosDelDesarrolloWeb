@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous"
+  ></link>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+      
+        <a class="navbar-brand" href="#"><i class="fas fa-mail-bulk"></i> Sistema de Correos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">A cerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </div>
+      </nav>
+      
+    <h2 class="text-center mt-5">Registro</h2> 
+        <div class="container my-5">
+            <form autocomplete="off" onsubmit="onFormSubmit()">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="rut">Rut</label>
+                    <input type="text" class="form-control" id="rut" placeholder="Rut" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="fecha" required >  
+                </div>
+                
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="text" class="form-control" id="correo" placeholder="john@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" class="form-control" id="telefono" placeholder="Telefono" required>
+                    </div>
+
+                        <div class="form-group"><label for="direccion">Dirección</label>
+                            <input type="text"class="form-control" id="direccion" placeholder="Avenida Siempre Viva 742" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text"class="form-control" id="ciudad" placeholder="Ciudad" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pais">País</label>
+                            <input type="text"class="form-control"id="pais"placeholder="País" required>
+                        </div>
+                        <button class="btn btn-primary" id="entry" onclick="AddRow()" >Enviar</button>
+                        
+                    </form>
+        </div>
+
+
+
+        
+         <!--Tabla-->
+         <div class="container-table">
+            <table class="table table-striped table-dark" id="display">
+                <thead class="thead-dark">
+                  <tr  class="p-3 mb-2 bg-gradient-secondary text-white">
+                    <th scope="col">índice</th>
+                    <th scope="col">Nombre Completo</th>
+                    <th scope="col">Correo electrónico</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+
+              <button onclick="deleteFirst()" class="btn btn-secondary">Eliminar primer elemento</button>
+              <button onclick="deleteLast()" class="btn btn-secondary">Eliminar último elemento</button>
+         </div>
+            
+
+    
+    <script type="text/javascript" src="assets/js/script2.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"crossorigin="anonymous"></script>
+
+</body>
+</html>
