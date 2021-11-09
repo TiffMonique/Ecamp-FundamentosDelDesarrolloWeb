@@ -8,7 +8,7 @@ var selectedRow = null;
 function onFormSubmit(e){
     event.preventDefault();
     var formData = readFormData();
-    if(selectedRow === null){
+    if(selectedRow === null && !formData ===false){
         insertNewRecord(formData);
     }
     else{
@@ -31,12 +31,12 @@ function readFormData() {
     formData["pais"] = document.getElementById("pais").value;
 
     var exnombre= /^[a-zA-ZÀ-ÿ\s]{1,40}$/; // Letras y espacios, pueden llevar acentos.
-    //var exrut= /^(\d{2}\.\d{3}\.\d{3}-)([a-zA-Z]{1}$|\d{1}$)/;
+    var exrut= /^(\d{2}\.\d{3}\.\d{3}-)([a-zA-Z]{1}$|\d{1}$)/;
     var exfecha= /^(?:(?:(?:0?[1-9]|1\d|2[0-8])[/](?:0?[1-9]|1[0-2])|(?:29|30)[/](?:0?[13-9]|1[0-2])|31[/](?:0?[13578]|1[02]))[/](?:0{2,3}[1-9]|0{1,2}[1-9]\d|0?[1-9]\d{2}|[1-9]\d{3})|29[/]0?2[/](?:\d{1,2}(?:0[48]|[2468][048]|[13579][26])|(?:0?[48]|[13579][26]|[2468][048])00))$/;
     var excorreo= /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
     var extelefono= /^\d{7,14}$/; // 7 a 14 numeros.
-    //var exdireccion= /\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenida|Carril|Calle|Boulevard|Barrio|Colonia|Casa|Ave|Blvd|Col|Bo)\.?/;
-    //var exciudad= /(?:[A-Z][a-z.-]+[ ]?)+/;
+    var exdireccion= /\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenida|Carril|Calle|Boulevard|Barrio|Colonia|Casa|Ave|Blvd|Col|Bo)\.?/;
+    var exciudad= /(?:[A-Z][a-z.-]+[ ]?)+/;
     var expais= /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
 
     if (!formData["nombre"] ===""  && !formData["rut"] ==="" && !formData["fecha"] ==="" && !formData["correo"]===""  && !formData["telefono"]==="" && !formData["direccion"]  ==="" && !formData["ciudad"] ==="" && !formData["pais"] ==="") {
@@ -58,10 +58,10 @@ function readFormData() {
         alert("El campo rut es obligatorio y debe contener menos de  12 caracteres");
         return false;
     }
-    /*else if (!exrut.test(formData["rut"])) {
+    else if (!exrut.test(formData["rut"])) {
         alert("El campo rut no es valido, inserte de nuevo");
         return false;
-    }*/
+    }
 
 
 
@@ -80,11 +80,11 @@ function readFormData() {
         return false;
     }
 
-    /*
+    
     else if (!exdireccion.test(formData["direccion"])) {
         alert("El campo direccion no es valido, inserte de nuevo");
         return false;
-    }*/
+    }
 
 
     else if (formData["ciudad"].length == 0 || formData["ciudad"].length > 20) {
@@ -93,11 +93,11 @@ function readFormData() {
     }
     
 
-    /*
+    
     else if (!exciudad.test(formData["ciudad"])) {
         alert("El campo ciudad no es valido, inserte de nuevo");
         return false;
-    }*/
+    }
 
 
     else if (formData["pais"].length == 0 || formData["pais"].length > 20) {
