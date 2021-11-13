@@ -114,20 +114,12 @@ var curso1 = [{
 }];
 
 $(document).ready(function () {
+    var table = $('#table')
     var table = $('#myTable')
-    //console.log(curso1)
 
     for (var i in curso1) {
 
-        for(var j =0; j<3; j++){
-            if(curso1[i].calificaciones[j]<4.0){
-               $(this).css("color","red");
-            }
 
-            j++;
-
-        }
-      
 
         let row = `<tr>
                                 <td>${parseInt(i) + 1}</td>
@@ -136,11 +128,55 @@ $(document).ready(function () {
                                 <td>${curso1[i].calificaciones[1]}</td>
                                 <td>${curso1[i].calificaciones[2]}</td>
                                 <td>${curso1[i].calificaciones[3]}</td>
-                                
                                 <td>${((curso1[i].calificaciones[0] + curso1[i].calificaciones[1] + curso1[i].calificaciones[2] + curso1[i].calificaciones[3]) / 4).toFixed(2)}</td>       
                           </tr>`
         table.append(row);
+
     }
+
+
+    $('#table').DataTable({
+        "fnRowCallback": function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
+            if (aData[2] < 4) //Si las notas o el promedio es menor a 4.0
+            {
+
+                $('td:eq(2)', nRow).css('color', '#F44336');
+            }
+            if (aData[3] < 4.0) //Si las notas o el promedio es menor a 4.0
+            {
+                $('td:eq(3)', nRow).css('color', '#F44336');
+            }
+            if (aData[4] < 4.0) //Si las notas o el promedio es menor a 4.0
+            {
+                $('td:eq(4)', nRow).css('color', '#F44336');
+            }
+            if (aData[5] < 4.0) //Si las notas o el promedio es menor a 4.0
+            {
+                $('td:eq(5)', nRow).css('color', '#F44336');
+            }
+            if (aData[6] < 4.0) //Si las notas o el promedio es menor a 4.0
+            {
+                $('td:eq(6)', nRow).css('color', '#F44336');
+            }
+
+        }
+    });
+
+
+
+
+
 })
 
+
+/*function cargar() {
+    var celdas = document.getElementById("myTable").getElementsByTagName("td");
+    for (var i = 0; i < celdas.length; i++) {
+        if (celdas.item(i).textContent < 4.0) {
+            celdas.item(i).style.color = "#F00";
+        }
+    }
+}
+*/
+//window.onload = cargar;
 

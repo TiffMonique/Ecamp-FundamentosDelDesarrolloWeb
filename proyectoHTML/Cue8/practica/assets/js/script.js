@@ -25,17 +25,17 @@ $(document).ready(function () {
         $(this).show();
     })
 
-var elementosP = $("p").toArray();
-console.log(elementosP);
+    var elementosP = $("p").toArray();
+    console.log(elementosP);
 
-var colores =["blue","green","red","orange"];
+    var colores = ["blue", "green", "red", "orange"];
 
-$("p").each(function(i,elemento){
-    $(elemento).css("color", colores[i]).click(function(){
-        $(this).css("color","black");
+    $("p").each(function (i, elemento) {
+        $(elemento).css("color", colores[i]).click(function () {
+            $(this).css("color", "black");
+        })
+
     })
-
-})
 
 
 });
@@ -46,6 +46,6 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     console.log($('ol:eq(1) > li:eq(2) > a').html());//Esto nos devuelve el elemento 1
- 
+
 
 });
