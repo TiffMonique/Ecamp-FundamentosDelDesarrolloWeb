@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zapateria Vegana</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <a href="#" class="logo">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#about">A cerca de</a>
+        <a href="#menu">Productos</a>
+        <a href="#products">Lo mas vendido</a>
+        <a href="#contact">Contáctanos</a>
+      </nav>
+
+      <div class="two columns u-pull-right">
+        <ul>
+          <li class="submenu">
+            <div class="icons">
+              <div class="fas fa-search" id="search-btn"></div>
+              <div class="fas fa-shopping-cart" id="cart-btn"></div>
+              <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+
+            <div id="carrito">
+              <table id="lista-carrito" class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <a href="#" id="vaciar-carrito" class="button u-full-width"
+                >Vaciar Carrito</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!--
+         <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+      -->
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+
+      <!--
+        <div class="cart-items-container">
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="images/cart-item-1.png" alt="" />
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="images/cart-item-2.png" alt="" />
+          <div class="content">
+            <h3>cart item 02</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="images/cart-item-3.png" alt="" />
+          <div class="content">
+            <h3>cart item 03</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="images/cart-item-4.png" alt="" />
+          <div class="content">
+            <h3>cart item 04</h3>
+            <div class="price">$15.99/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+      </div>
+      -->
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Zapateria nacional</h3>
+        <p>Especializados en la fabricación de calzado vegano</p>
+        <a href="#" class="btn">Obten los tuyos ahora</a>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading"><span>A cerca </span> de</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/about-img.jpg" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>¿Qué hace que nuestros zapatos sean especiales?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae
+            ratione a officiis id temporibus autem? Quod nemo facilis
+            cupiditate. Ex, vel?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet
+            enim quod veritatis, nihil voluptas culpa! Neque consectetur
+            obcaecati sapiente?
+          </p>
+          <a href="#" class="btn">Ver mas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+
+    <div id="lista-productos" class="container">
+      <section class="menu" id="menu">
+        <h1 class="heading">Nuestros <span>productos</span></h1>
+
+        <div class="box-container">
+          <div class="box">
+            <div class="card">
+              <img src="images/menu-1.jpg" alt="" />
+              <div class="info-card" id="info">
+                <h3>Zapatos veganos negros Reto</h3>
+                <div class="price u-pull-left">$90210,61</div>
+                <div class="span_ u-pull-right">100000.99</div>
+
+                <a href="#" class="u-full-width btn agregar-carrito"
+                  >Agregar Al Carrito</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="card">
+              <img src="images/menu-2.jpg" alt="" />
+              <h3>Calzado vegano Reto Sport Kaki</h3>
+              <div class="price u-pull-right">
+                $90210,61 <span>100000.99</span>
+              </div>
+              <a href="#" class="btn u-full-width agregar-carrito"
+                >Agregar Al Carrito</a
+              >
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="card">
+              <img src="images/menu-3.jpg" alt="" />
+              <h3>Zapatos veganos marrones Reto Sport</h3>
+              <div class="price u-pull-right">
+                $90210,61 <span>100000.99</span>
+              </div>
+              <a href="#" class="btn u-full-width agregar-carrito"
+                >Agregar Al Carrito</a
+              >
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="card">
+              <img src="images/menu-4.jpg" alt="" />
+              <h3>Zapatos veganos azules Reto Sport</h3>
+              <div class="price u-pull-right">
+                $90210,61<span>100000.99</span>
+              </div>
+              <a href="#" class="btn u-full-width agregar-carrito"
+                >Agregar Al Carrito</a
+              >
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="card">
+              <img src="images/menu-5.jpg" alt="" />
+              <h3>Botas martens veganas color negro Kosmos</h3>
+              <div class="price u-pull-right">
+                $98716,11 <span>180000.99</span>
+              </div>
+              <a href="#" class="btn agregar-carrito">Agregar Al Carrito</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="card">
+              <img src="images/menu-6.jpg" alt="" />
+              <h3>Botines veganos color burdeos Luna</h3>
+              <div class="price u-pull-right">
+                $91117,61 <span>920000.99</span>
+              </div>
+              <a href="#" class="btn agregar-carrito">Agregar Al Carrito</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- menu section ends -->
+
+      <!-- products section starts  -->
+      <section class="products" id="products">
+        <h1 class="heading">Lo más <span>vendido</span></h1>
+
+        <div class="box-container">
+          <div class="box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart agregar-carrito"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="images/product-1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Zapatos veganos estilo martens negros Kosmos</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+
+              <div class="price">$63783,25<span> $64099.99</span></div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart agregar-carrito"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="images/product-2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Botas veganas para mujer color negro Utopia</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$91117,61 <span> $93000.99</span></div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icons">
+              <a
+                href="#"
+                class="fas fa-shopping-cart u-full-width agregar-carrito"
+              ></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="images/product-3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Botas veganas verdes estilo martens Kosmos</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">$98716,11 <span> $99999.99</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- products section ends  -->
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>Contácta</span>nos</h1>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.5649162976374!2d-87.15118228516556!3d14.102842090121008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9ed6f1ef59183fc!2zMTTCsDA2JzEwLjIiTiA4N8KwMDgnNTYuNCJX!5e0!3m2!1ses!2shn!4v1637860295245!5m2!1ses!2shn"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+
+        <form action="">
+          <h3>Ponerse en contacto</h3>
+          <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="nombre" />
+          </div>
+          <div class="inputBox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="correo Electrónico" />
+          </div>
+          <div class="inputBox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="telefóno" />
+          </div>
+          <input type="submit" value="Contactar ahora" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="links">
+        <a href="#">Inicio</a>
+        <a href="#">A cerca de</a>
+        <a href="#">Productos</a>
+        <a href="#">Lo más vendido</a>
+        <a href="#">contáctanos</a>
+      </div>
+
+      <div class="credit">
+        created by <span>Tiffany Monique Matamoros</span> | all rights reserved
+      </div>
+    </section>
+
+    <!-- footer section ends c-->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -169,17 +169,10 @@ $(document).ready(function () {
 })
 
 
-/*function cargar() {
-    var celdas = document.getElementById("myTable").getElementsByTagName("td");
-    for (var i = 0; i < celdas.length; i++) {
-        if (celdas.item(i).textContent < 4.0) {
-            celdas.item(i).style.color = "#F00";
-        }
-    }
-}
-*/
-//window.onload = cargar;
 
+
+
+//PAra los botones
 
 
 filterSelection("all")
