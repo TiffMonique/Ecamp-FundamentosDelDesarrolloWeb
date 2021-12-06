@@ -78,6 +78,8 @@ function insertarCarrito(zapato) {
     `;
     listaZapato.appendChild(row);
     guardarZapatoLocalStorage(zapato);
+
+
 }
 
 
@@ -162,3 +164,28 @@ function eliminarZapatoLocalStorage(zapato) {
 function vaciarLocalStorage() {
     localStorage.clear();
 }
+
+
+
+/******************************************** */
+
+
+
+$(document).ready(function () {
+    $(".box").mouseenter(function () {
+        $(this).addClass("box_new");
+    });
+    $(".box").mouseleave(function () {
+        $(this).removeClass("box_new");
+    });
+});
+
+
+$(document).ready(function () {
+    $(".box").hover(function () {
+        $(this).animate({
+            borderWidth: "10px",
+
+        });
+    });
+});
