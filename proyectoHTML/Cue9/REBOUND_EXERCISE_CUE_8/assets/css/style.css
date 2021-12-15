@@ -1,0 +1,11 @@
+body,
+html {
+  background: url(../digimon-adventure-900x491.jpg) no-repeat center center
+    fixed;
+  background-size: 100% 100%;
+}
+
+button {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

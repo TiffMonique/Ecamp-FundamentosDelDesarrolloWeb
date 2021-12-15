@@ -23,15 +23,17 @@
 });*/
 
 // $(document).click(function () {
-$("#LoadWebApi").click(function () {
+$(document).ready(function () {
 
     $.ajax({
         type: "GET",
         url: "https://digimon-api.herokuapp.com/api/digimon",
+
         dataType: "json",
 
         success: function (data) {
             $.each(data, function (i, item) {
+
                 var row = "<tr>" +
                     "<td>" + item.name + "</td>" +
                     "<td>" + item.level + "</td>" +
@@ -46,3 +48,4 @@ $("#LoadWebApi").click(function () {
 
 
 });
+

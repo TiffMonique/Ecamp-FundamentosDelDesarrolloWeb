@@ -1,0 +1,50 @@
+body,
+html {
+  background: linear-gradient(
+      rgba(226, 228, 235, 0.7),
+      rgba(236, 239, 247, 0.7)
+    ),
+    url(../digimon-adventure-900x491.jpg) no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+
+button {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(176, 207, 235);
+}
+
+/**/
+#wrapper {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.data-container {
+  margin-top: 20px;
+}
+
+.data-container ul {
+  padding: 0;
+  margin: 0;
+}
+
+.data-container li {
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #eee;
+  color: #666;
+}
